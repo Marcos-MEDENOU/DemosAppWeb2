@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SignInServlet
+ * Servlet implementation class ContactServlet
  */
-@WebServlet("/SignInServlet")
-public class SignInServlet extends HttpServlet {
+@WebServlet("/ContactServlet")
+public class ContactServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public SignInServlet() {
+    public ContactServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -22,13 +22,15 @@ public class SignInServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getServletContext().getRequestDispatcher("/WEB-INF/sign_in.jsp").forward(request, response);
+		request.getServletContext().getRequestDispatcher("/WEB-INF/contact.jsp").forward(request, response);
 	}
 
-	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		doGet(request, response);
+		doGet(request, response);
 	}
 
 }

@@ -24,12 +24,30 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<servlet-class>com.servlets.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpServlet</servlet-name>
+		<url-pattern>/sign_up</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>AboutServlets</servlet-name>
 		<servlet-class>com.servlets.AboutServlets</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AboutServlets</servlet-name>
 		<url-pattern>/about</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContactServlet</servlet-name>
+		<servlet-class>com.servlets.ContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactServlet</servlet-name>
+		<url-pattern>/contact</url-pattern>
 	</servlet-mapping>
 	
 	<jsp-config>
